@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= title
+    body
+        form(action='/login', method='post')
+            | User:
+            br
+            |  
+            input(type='text', name='username')
+            br
+            |  Pass:
+            br
+            |  
+            input(type='password', name='password')
+            br
+            br
+            |  
+            input(type='submit', value='Login')
