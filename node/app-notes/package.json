@@ -1,0 +1,16 @@
+{
+  "name": "appnotes",
+  "version": "1.0.0",
+  "description": "Esta app sirve para gestionar notas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "yargs": "^7.0.2"
+  }
+}
