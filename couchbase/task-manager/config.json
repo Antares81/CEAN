@@ -1,0 +1,8 @@
+{
+    "couchbase": {
+        "server": "couchbase://localhost",
+        "bucket": "taskmanager"
+
+    },
+    "salt":"testApp"
+}
