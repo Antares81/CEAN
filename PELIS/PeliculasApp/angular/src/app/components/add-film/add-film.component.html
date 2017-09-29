@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Panel de introducción</div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12">
+        <form>
+          <div class="form-group">
+            <label for="name">Título</label>
+            <input [(ngModel)]="name" type="text" class="form-control" name="name" placeholder="Título">
+          </div>
+          <div class="form-group">
+            <label for="genre">Género</label>
+            <input [(ngModel)]="genre" type="text" class="form-control" name="genre" placeholder="Genero">
+          </div>
+
+          <div class="checkbox">
+            <label>
+      <input type="checkbox" [(ngModel)]="digital" name="digital"> Digital
+    </label>
+            <label>
+      <input type="checkbox" [(ngModel)]="bluray" name="bluray"> Bluray
+    </label>
+            <label>
+      <input type="checkbox" [(ngModel)]="dvd" name="dvd"> DVD
+    </label>
+          </div>
+        </form>
+        <button (click)="saveFilm()" class="btn btn-default">Guardar película</button>
+      </div>
+    </div>
+  </div>
+</div>

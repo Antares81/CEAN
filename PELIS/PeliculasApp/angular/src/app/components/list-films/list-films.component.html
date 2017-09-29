@@ -1,0 +1,35 @@
+<table *ngIf="!filteredFilms" class="table">
+  <tr>
+    <th>Titulo</th>
+    <th>Género</th>
+    <th>Digital</th>
+    <th>Bluray</th>
+    <th>DVD</th>
+  </tr>
+
+  <tr *ngFor="let film of films | async">
+    <td>{{film.name}}</td>
+    <td>{{film.genre}}</td>
+    <td><span [ngClass]="film.format.digital ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+    <td><span [ngClass]="film.format.bluray ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+    <td><span [ngClass]="film.format.dvd ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+  </tr>
+</table>
+
+<table *ngIf="filteredFilms" class="table">
+  <tr>
+    <th>Titulo</th>
+    <th>Género</th>
+    <th>Digital</th>
+    <th>Bluray</th>
+    <th>DVD</th>
+  </tr>
+
+  <tr *ngFor="let film of filteredFilms | async">
+    <td>{{film.name}}</td>
+    <td>{{film.genre}}</td>
+    <td><span [ngClass]="film.format.digital ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+    <td><span [ngClass]="film.format.bluray ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+    <td><span [ngClass]="film.format.dvd ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span></td>
+  </tr>
+</table>
