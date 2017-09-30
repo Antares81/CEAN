@@ -1,0 +1,16 @@
+<h4>Mensaje: {{mensaje}}</h4>
+<ul>
+    <!--<li *ngFor="let recipe of recipes | async">
+        {{recipe.name | uppercase}} - {{recipe.preparacion}}
+        <ul>
+            <li *ngFor="let ingrediente of recipe.ingredientes">
+                    <{{ingrediente.name}}>
+            </li>
+        </ul>
+    </li>//-->
+    <li *ngFor="let recipe of recipes | async">
+        <g-recipe [receta] = "recipe" (recetaHecha) = "logReceta(recipe)" ></g-recipe>
+    </li>
+</ul>
+
+<button (click) = "addRecipe()">Añadir receta</button>
