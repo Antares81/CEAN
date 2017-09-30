@@ -1,0 +1,97 @@
+<div class="form">
+    <form id="loginForm">
+        <table>
+            <tbody>
+                <tr>
+                    <td>User:</td>
+                    <td><input type="text" name="username" #username></td>
+                </tr>
+                <tr>
+                    <td>Pass:</td>
+                    <td><input type="password" name="password" #password></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="buttons" colspan=2>
+                        <input type="button" value="Aceptar" (click)="login(username.value, password.value)">
+                        <input type="button" value="Cancelar" (click)="cancel()">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    <!--
+    <form id="loginForm">
+        <table>
+            <tbody>
+                <tr>
+                    <td>User:</td>
+                    <td><input type="text" name="username" [(ngModel)]="username"></td>
+                </tr>
+                <tr>
+                    <td>Pass:</td>
+                    <td><input type="password" name="password" [(ngModel)]="password"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="buttons" colspan=2>
+                        <input type="button" value="Aceptar" (click)="login()">
+                        <input type="button" value="Cancelar" (click)="cancel()">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    //-->
+    <!--
+    <form id="loginForm">
+        <table>
+            <tbody>
+                <tr>
+                    <td>User:</td>
+                    <td><input type="text" name="username" value="{{username}}"></td>
+                </tr>
+                <tr>
+                    <td>Pass:</td>
+                    <td><input type="password" name="password" value="{{password}}"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="buttons" colspan=2>
+                        <input type="button" value="Aceptar" (click)="login()">
+                        <input type="button" value="Cancelar" (click)="cancel()">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    //-->
+    <!--
+    <form id="loginForm">
+        <table>
+            <tbody>
+                <tr>
+                    <td>User:</td>
+                    <td><input type="text" name="username" [value]="username"></td>
+                </tr>
+                <tr>
+                    <td>Pass:</td>
+                    <td><input type="password" name="password" [value]="password"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="buttons" colspan=2>
+                        <input type="button" value="Aceptar" (click)="login()">
+                        <input type="button" value="Cancelar" (click)="cancel()">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <img [src]="imagen">
+    </form>
+    //-->
+</div>
